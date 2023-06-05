@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+<html>
+
+<head>
+    <title>HTML Notes</title> 
+    <meta charset="utf-8">
+    <meta http-equiv-"X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content+"width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <div class="image">
+        <div class="upper-content">
+            
+            <table>
+                <tr>
+                    <td id="header">
+                        <h1 id="header-name">Austin Goodnight</h1>
+                        <nav id="header-nav">
+                            <div><a>music</a></div>
+                            <div><a>coding</a></div>
+                            <div><a>store</a></div>
+                            <div><a>blog</a></div>
+                        </nav>
+                        <a id="menu">test</a>
+                    </td>
+                    <td id="socials">
+                    </td>
+                </tr>
+            </table>  
+            <div class="top-info">
+                <p class="introduction">
+                    hi, i’m austin, a musician, artist, producer, & computer science student from Washington
+                </p>
+                <nav class="socials">
+                    <a href="https://open.spotify.com/artist/4BmOBnTDsTRgpw4KSJvKvd?si=6YWzLAklRfqEtSBMT5pbHQ" target="_blank" rel="noopener noreferrer">Spotify</a>
+                    <a href="https://music.apple.com/us/artist/austin-goodnight/1666440903" target="_blank" rel="noopener noreferrer">Apple Music</a>
+                    <a href="https://www.instagram.com/austingoodnightsc/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a>GitHub</a>
+                    <a>Linkedin</a>
+                </nav>
+            </div> 
+        </div>
+    </div>
+    <div class="color">
+        <div class="lower-content">
+            <div class="lower-left">
+                <h2>What's New?</h2>
+                <div class="card-holder">
+                    <div class="card">
+                        <img>
+                        <h3>ClassFinder+</h3>
+                        <p class="tag">coding project</p>
+                        <p>an improved version of WWU's classfinder application</p>
+                        <a>check it out here</a> <br>
+                        <a>read about it here (medium)</a>
+                    </div>
+                    <div class="card">
+                        <img>
+                        <h3>ClassFinder+</h3>
+                        <p class="tag">coding project</p>
+                        <p>an improved version of WWU's classfinder application</p>
+                        <a>check it out here</a> <br>
+                        <a>read about it here (medium)</a>
+                    </div>
+                    <div class="card">
+                        <img>
+                        <h3>ClassFinder+</h3>
+                        <p class="tag">coding project</p>
+                        <p>an improved version of WWU's classfinder application</p>
+                        <a>check it out here</a> <br>
+                        <a>read about it here (medium)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-right">
+                <h2>Music</h2>
+            </div>
+            
+
+        </div> 
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+<style>
+    
+    *{
+        /* set font for site */
+        font-family: 'Montserrat', sans-serif;
+        display: display-block;
+    }
+    .upper-content h1, .upper-content p, a{
+        /* set upper content text color to white */
+        color: white;
+    }
+    body{
+        /* set background color aswell as margin */
+        background-color: #37614D;
+        padding: 0;
+        margin: 0;
+        border: 24px solid #37614D;
+    }
+    div{
+        margin: 0px;
+        padding: 0px;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .lower-left{
+        width: 69%;
+        float: left;
+    }
+    .lower-right{
+        float: left;
+    }
+    h2{
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+        color: #37614D;
+
+    }
+    .tag{
+        border: 3px solid #37614D;
+        border-radius: 20px;
+        color: #37614D;
+        padding-left: 10px;
+    }
+
+    /* Table Nav Styling */
+    td{
+        border: 5px solid white;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+/* card styling */
+    .card{
+        /*box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); /* from https://codepen.io/sdthornton/pen/wBZdXq */
+        border-radius: 7px;
+        border: 7px solid #37614D;
+        border-color: #37614D;
+        width: 200px;
+        padding: 0 20px;
+        margin: 10px;
+        float:left;
+    }
+    .card p, .card a{
+        font-size: .7em;
+        color: #37614D;;
+    }
+    .card-holder{
+        background-color: #e0cfb5;
+        padding: 0 30px;
+    }
+    h3{
+        padding: 0;
+        margin: 0;
+        font-size: 1.5em;
+        color: #37614D;
+    }
+    
+/*header/nav styling*/
+    #header{
+        width: 80%;
+    }
+    #header-name{
+        color: white;
+        padding: 0;
+        margin: 0;
+        margin-right: auto;
+        margin-left: 0;
+        float: left;
+        padding-left: 20px;
+    }
+    #header-nav a{
+        transition: .3s;
+        margin: auto auto;
+        text-align: center;
+    }
+    #header-nav div{
+        float: left;
+        width: 5vw;
+        padding: 10px;
+        text-align: center;
+    }
+    #header-nav a:hover{
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    #header-contact{
+        display: inline-block;
+        text-align: right;
+        margin-right: 0;
+        margin-left: auto;
+        width: 12%;
+    }
+/*end header/nav styling*/
+
+
+
+    .top-info{
+        width: 100%;
+        margin: 50px;
+    }
+    .introduction{
+        display: inline-block;
+        float: left;
+        width: 30%;
+        margin: 0;
+    }
+    .socials a{
+        display: block;
+        transition: .3s;
+        text-decoration: none;
+    }
+    .socials a:hover{
+        /*background-color: #37614D;*/
+        color: white;
+        font-weight: bold;
+        font-size: 1.3em;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .socials{
+        display: inline-block;
+        float: right;
+        align-content: right;
+        padding: 0;
+        margin: 0;
+        margin-right: 80px;
+        text-align: right;
+    }
+    .upper-content{
+        /* Creates left-right border for upper content*/
+        margin: 0px 24px;
+        padding-top: 24px;
+    }
+    .lower-content{
+        /* Centers lower content into smaller space */
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    .color{
+        background-color: #ffebcd;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+
+    blockquote{
+        font-family: 'Times New Roman', Times, serif;
+        padding: 6px;
+    }
+    .image{
+        background-image: url("banner.png");
+        height: 350px;
+        padding: 0;
+        margin: 0;
+        object-fit: cover;
+    }
+    #menu{
+        display: none;
+        width: 0px;
+    }
+    @media (max-width: 850px) {
+        #menu{
+            display: inline-block;
+        }
+        #header-nav a, #header-nav nav, #header-nav div{
+            display: none;
+            width: 0px;
+        }
+    /* this css is used when width is under the given pixels */
+    }
+
+</style>

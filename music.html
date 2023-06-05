@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Lancelot&family=Montserrat:wght@200;300;400;500;600;700&family=Rakkas&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+
+<html>
+
+<head>
+    <title>Austin - Music</title> 
+    <meta charset="utf-8">
+    <meta http-equiv-"X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content+"width=device-width, initial-scale=1.0">
+    <!-- icon library -->
+    <link rel="stylesheet" href="webfontkit/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function formCheck(){
+            if(document.forms[0].emailEntry.value == ""){
+                alert("Please enter an e-mail address.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+
+<body>
+    <div class="image">
+        <div class="upper-content">
+            <div id="header">
+                <a href="index.html"><h1 id="header-name">Austin Goodnight</h1></a>
+                <nav id="header-nav">
+                    <div><a href="music.html">music</a></div>
+                    <div><a href="films.html">films</a></div>
+                    <div><a href="photo.html">photo</a></div>
+                    <div><a href="coding.html">coding</a></div>
+                </nav>
+                <button id="menu"><i class="fa fa-bars"></i></button>               
+            </div>  
+            <div class="divider"></div>
+            <div class="top-info">
+
+        </div>
+    </div>
+    <div class="color">
+        <div class="lower-content-music">
+            <div>
+                <h2>Music</h2>
+                <p>I'm a music producer, artist, songwriter. Music has been a large part of my life since I was young. I've studied Music Production in College, worked in a performing arts center, created original music for a short film, recorded my friends, and now released 2 singles (and soon an EP). Music is by far the most challenging thing I work on at this point, but I also find it's the most rewarding.  </p>
+                <p>You can check out my music on the platforms below (or any place you listen to music)</p>
+                <a class="button">Spotify</a><a class="button">Apple Music</a><a class="button">Deezer</a>
+                <br>
+                <p>Check out my most recent single below!</p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5TkB6rIjFY2MxIZquT14FN?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p>If you want to reach out to me to work on your song, film, or otherwise, contact me here</p>
+                <form method="POST" onSubmit="return formCheck();">
+                    <label for="nameEntry">Name:</label>
+                    <textarea name="nameEntry"></textarea>
+                    <label for="emailEntry">E-mail:</label>
+                    <textarea type="email" name="emailEntry"></textarea>
+                    <label for="comments">Comments:</label>
+                    <textarea rows="4" cols="30" name="project/idea"></textarea>
+                    <input type="submit" id="submitButton" value="Send"></input>
+                </form>
+            </div>
+            <div>
+                <h5>Experience</h5>
+                <p>Studying Music Production at Edmonds College from 2020-2022, as well as teaching other students</p>
+                <p>Working as an intern at Edmonds Center for the Arts running events for up to 700 audience members</p>
+                <h5>Programs/Tech</h5>
+                <ul>
+                    <li>Ableton Live 10</li>
+                    <li>Max</li>
+                    <li>Dante</li>
+                    <li>Yamaha QL3 & CL5 Mixing Boards</li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
+
+<script>
+    function showMenu() {
+        var x = document.getElementById("popup");
+        if (x.style.height === "100vh") {
+            x.style.display = "none";
+            x.style.height = "0%";
+        } else {
+            x.style.display = "block";
+            x.style.height = "100vh"
+        }
+    }
+</script>

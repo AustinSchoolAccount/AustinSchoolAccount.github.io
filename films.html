@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Lancelot&family=Montserrat:wght@200;300;400;500;600;700&family=Rakkas&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+
+<html>
+
+<head>
+    <title>Austin - Films</title> 
+    <meta charset="utf-8">
+    <meta http-equiv-"X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content+"width=device-width, initial-scale=1.0">
+    <!-- icon library -->
+    <link rel="stylesheet" href="webfontkit/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="popup">
+        <span id="exit-icon" class="material-symbols-outlined" onclick="showMenu()">
+            close
+        </span>
+        <nav id="mobile-nav">  
+            <a href="music.html">music</a>
+            <a href="films.html">film</a>
+            <a href="photo.html">photo</a>
+            <a href="coding.html">coding</a>
+        </nav>
+    </div>
+    <div class="image">
+        <div class="upper-content">
+            <div id="header">
+                <a href="index.html"><h1 id="header-name">Austin Goodnight</h1></a>
+                <nav id="header-nav">
+                    <div><a href="music.html">music</a></div>
+                    <div><a href="films.html">film</a></div>
+                    <div><a href="photo.html">photo</a></div>
+                    <div><a href="coding.html">coding</a></div>
+                </nav>
+                <button id="menu" onclick="showMenu()"><i class="fa fa-bars"></i></button>               
+            </div>  
+            <div class="divider"></div>
+            <div class="top-info">
+
+        </div>
+    </div>
+    <div class="color">
+        <div class="lower-content-music">
+            <div>
+                <h2>Films</h2>
+                <p>I've worked on a variety of films doing Editing, Audio, Producing, Composing, and more. Film is not my main interest, but I like to help whenever I get a chance. It's a very different format from the other projects I work on and it takes a lot more work than most people might assume. You can see the projects I've worked on below. If you're able to, I urge you to check them out!</p>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Genre</th>
+                        <th>Director</th>
+                        <th>Roles</th>
+                    </tr>
+                    <tr>
+                        <td>Green Sick</td>
+                        <td>Action Comedy</td>
+                        <td>Haven Patrick</td>
+                        <td>Editor, Boom</td>
+                    </tr>
+                    <tr>
+                        <td>Bitch Boy and I</td>
+                        <td>Drama</td>
+                        <td>Calie Bouma</td>
+                        <td>Composer, Promotion</td>
+                    </tr>
+                    <tr>
+                        <td>Unreleased</td>
+                        <td>Unreleased</td>
+                        <td>Leah Shannon</td>
+                        <td>Audio</td>
+                    </tr>
+                        
+                </table>
+                
+            </div>
+            <div>
+                <h5>Experience</h5>
+                    <p>Working on a variety of student films with Western Washington Film Production Club</p>
+                    <p>Freelance video work for businesses & schools</p>
+                <h5>Programs/Tech</h5>
+                <ul>
+                    <li>Ableton Live 10</li>
+                    <li>Resolve</li>
+                    <li>RX 8</li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
+
+<script>
+    function showMenu() {
+        var x = document.getElementById("popup");
+        if (x.style.height === "100vh") {
+            x.style.display = "none";
+            x.style.height = "0%";
+        } else {
+            x.style.display = "block";
+            x.style.height = "100vh"
+        }
+    }
+</script>

@@ -1,0 +1,357 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    display: display-block;
+}
+.upper-content h1, .upper-content p, a{
+    color: white;
+}
+html{
+    background-image: url(images/general/background.png);
+}
+.lower-content a{
+    color: black;
+}
+body {
+    cursor: url(images/cursor/main32.png), auto;
+}
+a:hover{
+    cursor: url(images/cursor/hover32.png), auto;
+}
+
+body, div{
+    padding: 0;
+    margin: 0;
+}
+span, h1,h2,h3,h4,h5,h6 {
+    font-family: 'enoway_personal_useregular', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: left;
+    padding: 20px 0;
+    color: black;
+    font-size: 5em;
+}
+h1{
+    font-size: 4em;
+    transition: .3s;
+}
+h3{
+    font-size: 1.5em;
+    color: white;
+}
+h4{
+    padding: 20px 0;
+    color:black;
+    font-size: 4em;
+    padding-left: 110px;
+}
+
+h1:hover{
+    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px, 
+    #FF533F 3px 3px 0px;
+}
+
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    width: 100%;
+}
+#gallery img{
+    display: block;
+    padding: 20px;
+    width: 100%;
+    margin: auto auto;
+    box-sizing: border-box;
+    transition: .3s;
+    object-fit: cover;
+}
+#gallery img:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 0px;
+}
+.img-container{
+    box-sizing: border-box;
+    /*height: 110%;*/
+    background-color: white;
+}
+
+
+/*header/nav styling*/
+#header{
+    display: flex;
+}
+#header-name{
+    color: white;
+    padding-left: 20px;
+}
+#header-nav{
+    display: flex;
+    margin-left: 40px;
+}
+#header-nav a{
+    transition: .3s;
+    text-align: center;
+    font-family: 'enoway_personal_useregular', sans-serif;
+    font-size: 2em; 
+}
+#header-nav div{
+    width: 5vw;
+    padding: 10px;
+    margin: auto; /* centers vertically */
+    text-align: center;
+}
+#header-nav a:hover{
+    background-color: #FF533F;
+}
+/* end header/nav styling */
+
+.top-info{
+    width: 100%;
+    margin: 50px;
+}
+.introduction{
+    float: left;
+    width: 30%;
+    margin: 0;
+}
+.socials a{
+    display: block;
+    transition: .3s;
+    text-decoration: none;
+}
+.socials a:hover{
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.socials{
+    float: right;
+    align-content: right;
+    padding: 0;
+    margin: 0;
+    margin-right: 80px;
+    text-align: right;
+}
+.upper-content{
+    padding-top: 24px;
+    width: 80%;
+    margin: 0 auto;
+}
+.lower-content{
+    width: 80%;
+    margin: 0 auto;
+}
+/*.lower-content div{
+    margin: 10px;
+}*/
+.lower-content-music{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.lower-content-music div{
+    margin: 10px;
+}
+.upper-content .divider{
+    background-color: white;
+}
+.color{
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.image{
+    background-image: url("images/general/banner2.jpeg");
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-position: 50%;
+    background-size: 100%;
+}
+
+
+/* Film Page */
+table{
+    text-align: left;
+    font-style:normal;
+    width: 100%;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+form textarea{
+    resize: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+#submitButton{
+    font-size: 1.2em;
+    padding: 5px;
+    background-color: black;
+    border: 2px black solid;
+    border-radius: 5px;
+    color: white;
+    transition: .3s;
+}
+#submitButton:hover{
+    background-color: white;
+    color: black;
+}
+
+/* ARTICLE STYLING */
+.article{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    transition: .3s;
+    padding: 20px;
+    border-radius: 20px;
+}
+.article:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px, 
+    #FF533F 8px 8px 0px,
+                #299FFF 16px 16px 0px,
+                #F9FF47 24px 24px 0px;
+}
+.title{
+    font-size: 2em;
+}
+.article img{
+    width: 180px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.article p{
+    padding-left: 20px;
+    color: black;
+}
+.article h3{
+    font-size: 2.5em;
+    color:black;
+}
+.article-body{
+    display: flex;
+    flex-direction: row;
+}
+.type{
+    color: grey;
+    /*font-style: italic;*/
+    text-align: right;
+}
+.button{
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'enoway_personal_useregular', sans-serif;
+    border: 3px solid black;
+    color:black;
+    padding: 10px;
+    border-radius: 7px;
+    margin-right: 10px;
+    transition: .3s;
+    font-size: 1.5  em;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+}
+.divider{
+    width: 100%;
+    height: 5px;
+    border-radius: 5    px;
+    margin-bottom: 10px;
+    background-color:black;
+}
+h5{
+    padding: 20px 0;
+    font-size: 3em;
+}
+/* END ARTICLE STYLING */
+
+/* Mobile / Tablet Nav */
+#menu{
+    display: none;
+    width: 0px;
+}
+#mobile-nav{
+    margin-top: 200px;
+}
+#popup{
+    position: fixed;
+    display: none;
+    height: 0;
+    transition: .5s;
+    width: 100vw;
+    background-color: orange;
+
+}
+#mobile-nav a{
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+#exit-icon{
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 4em;
+    color: white;
+    padding: 20px;
+}
+
+
+
+/* this css is used when width is under the given pixels */
+@media (max-width: 1200px) {
+    #menu{
+        display: block;
+        transition: .3s;
+        margin: auto 0;
+        margin-left: auto;  
+        font-size: 35px;
+        padding-right: 60px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        
+    }
+    #header-nav a, #header-nav nav, #header-nav div{
+        display: none;
+        width: 0px;
+    }
+    .article{
+        width: 100%;
+    }
+    #gallery{
+        grid-template-columns: 1fr 1fr; 
+    }
+    h4{
+        padding-left: 10px;
+    }
+}
+@media (max-width: 1000px) {
+    h4{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .article img{
+        width: 100%;
+        height: 300px;
+    }
+}
+

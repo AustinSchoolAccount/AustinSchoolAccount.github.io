@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Lancelot&family=Montserrat:wght@200;300;400;500;600;700&family=Rakkas&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+
+<html>
+
+<head>
+    <title>Austin - Films</title> 
+    <meta charset="utf-8">
+    <meta http-equiv-"X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content+"width=device-width, initial-scale=1.0">
+    <!-- icon library -->
+    <link rel="stylesheet" href="webfontkit/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="popup">
+        <span id="exit-icon" class="material-symbols-outlined" onclick="showMenu()">
+            close
+        </span>
+        <nav id="mobile-nav">  
+            <a href="music.html">music</a>
+            <a href="films.html">film</a>
+            <a href="photo.html">photo</a>
+            <a href="coding.html">coding</a>
+        </nav>
+    </div>
+    <div class="image">
+        <div class="upper-content">
+            <div id="header">
+                <a href="index.html"><h1 id="header-name">Austin Goodnight</h1></a>
+                <nav id="header-nav">
+                    <div><a href="music.html">music</a></div>
+                    <div><a href="films.html">film</a></div>
+                    <div><a href="photo.html">photo</a></div>
+                    <div><a href="coding.html">coding</a></div>
+                </nav>
+                <button id="menu" onclick="showMenu()"><i class="fa fa-bars"></i></button>               
+            </div>  
+            <div class="divider"></div>
+            <div class="top-info">
+
+        </div>
+    </div>
+    <div class="color">
+        <div class="lower-content">
+            <div>
+                <h2>Photo</h2>
+                <p>These are photos I've taken over the past few years, mainly on my Canon SL2. I use a variety of lenses, including the Helios-44, which is a vintage lens developed and manufactured in Russia in the 1970s under the USSR. It's one of my favorites to use because I think the juxtaposition between a modern camera and an extremely worn and old lens is an interesting combination</p>
+                <div id="gallery">
+                    <div class="img-container">
+                        <img src="images/gallery/12.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="images/gallery/13.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="images/gallery/14.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="images/gallery/6.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="images/gallery/7.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="images/gallery/8.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="images/gallery/9.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="images/gallery/10.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="images/gallery/11.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="images/gallery/1.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="images/gallery/2.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="images/gallery/3.jpg">
+                    </div>
+                    <div class="img-container">
+                        <img src="images/gallery/4.jpg">
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
+
+<script>
+    function showMenu() {
+        var x = document.getElementById("popup");
+        if (x.style.height === "100vh") {
+            x.style.display = "none";
+            x.style.height = "0%";
+        } else {
+            x.style.display = "block";
+            x.style.height = "100vh"
+        }
+    }
+</script>
