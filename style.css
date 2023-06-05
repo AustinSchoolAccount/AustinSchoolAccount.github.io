@@ -255,6 +255,7 @@ form textarea{
     text-align: right;
 }
 .button{
+    
     display: inline-block;
     box-sizing: border-box;
     font-family: 'enoway_personal_useregular', sans-serif;
@@ -347,20 +348,40 @@ h5{
         padding-left: 10px;
     }
 }
-@media (max-width: 1000px) {
+@media(max-width: 1000px){
+    .lower-content-music{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
     h4{
         margin-left: 0;
         padding-left: 0;
+        font-size: 5em;
     }
     .article img{
         width: 100%;
-        height: 300px;
+        height: 500px;
     }
     body{
-        font-size: 1.4em;
+        font-size: 1.8em;
     }
     .image{
-        height: 500px;
+        height: 700px;
+    }
+    .article-body{
+        flex-direction: column;
+    }
+    .button{
+        font-size: 1.5em;
+        padding: 20px;
+        text-decoration: none;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .lower-content-music{
+        grid-template-columns: 1fr;
     }
 }
 
