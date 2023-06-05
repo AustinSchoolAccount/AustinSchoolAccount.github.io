@@ -353,5 +353,8 @@ h5{
         width: 100%;
         height: 300px;
     }
+    body{
+        font-size: 1.5em;
+    }
 }
 
