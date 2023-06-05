@@ -116,10 +116,6 @@ h1:hover{
     width: 30%;
     margin: 0;
 }
-.highlight{
-    background-color: rgba(0, 0, 0, 0.3);
-    font-family: 'Montserrat', sans-serif;
-}
 .socials a{
     display: block;
     transition: .3s;
@@ -172,7 +168,7 @@ h1:hover{
     padding: 0;
 }
 .image{
-    background-image: url("images/general/banner2.jpeg");
+    background-image: url("images/general/banner2_new.jpeg");
     height: 400px;
     width: 100%;
     padding: 0;
@@ -348,7 +344,11 @@ h5{
         padding-left: 10px;
     }
 }
-@media(max-width: 1000px) {
+
+/* this is intended for phones */
+@media screen and (max-width: 1000px) {
+    /* I wanted to include and (-webkit-device-pixel-ratio: 3) to make this only appear on mobile devices,
+    however, since this will likely be tested on a computer, I wanted to make sure the second breakpoint showed up */
     h4{
         margin-left: 0;
         padding-left: 0;
@@ -359,7 +359,7 @@ h5{
         height: 500px;
     }
     body{
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     .image{
         height: 700px;
@@ -378,5 +378,9 @@ h5{
     .lower-content-music{
         grid-template-columns: 1fr;
     }
+    #menu{
+        font-size: 80px;
+    }
+
 }
 
